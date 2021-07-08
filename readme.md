@@ -1,7 +1,9 @@
 # Docker + Symfony Product Crud Demo
+
 Attention: this project is intended for demonstration purposes only and is not suitable for production
 
 Some of the tools used:
+
 - Symfony 5
 - Docker
 - Doctrine ORM
@@ -19,10 +21,13 @@ Navigate to the main directory:
 ``cd crud_demo``
 
 Build docker images:  
-``docker-compose up -d --build``  
+``docker-compose up -d --build``
 
-Navigate to our demo app directory, install dependencies and run migrations:  
-``cd app && composer install && symfony console doctrine:migrations:migrate``
+Navigate to our `WORK_DIR`:  
+``cd app``
+
+Install dependencies and run migrations:  
+``composer install -n && symfony console --no-interaction doctrine:migrations:migrate``
 
 Open admin URL in your browser:  
-``http://localhost:8080/admin``
+`http://localhost:8080/admin`
