@@ -31,7 +31,7 @@ Navigate to our app directory:
 
 Install dependencies, give permissions, run migrations and run fixtures:  
 `composer install -n && chown -R :www-data var && symfony console --no-interaction doctrine:migrations:migrate && symfony console --no-interaction doctrine:fixtures:load`  
-Todo: Automate these steps
+Todo: Automate this step
 
 You are set! Content will be served in this URL:  
 `http://localhost:8080/admin`
