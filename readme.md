@@ -15,11 +15,14 @@ Prerequiste: Docker
 Clone this repo by typing:  
 ``git clone https://github.com/Mites88/crud_demo.git``
 
-Navigate to the main folder:  
+Navigate to the main directory:  
 ``cd crud_demo``
 
 Build docker images:  
 ``docker-compose up -d --build``  
+
+Navigate to our demo app directory, install dependencies and run migrations:  
+``cd app && composer install && symfony console doctrine:migrations:migrate``
 
 Open admin URL in your browser:  
 ``http://localhost:8080/admin``
