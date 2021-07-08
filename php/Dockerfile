@@ -16,5 +16,3 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN git config --global user.email "contato@mites.gg" \ 
     && git config --global user.name "Mateus G."
-
-RUN cd /var/www/crud_demo/ && symfony console doctrine:fixtures:load
