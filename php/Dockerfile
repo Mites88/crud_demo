@@ -17,5 +17,4 @@ RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN git config --global user.email "contato@mites.gg" \ 
     && git config --global user.name "Mateus G."
 
-# @TODO check
-RUN chgrp -R www-data /var/www/crud_demo/var
+RUN php /var/www/crud_demo/bin/console doctrine:fixtures:load

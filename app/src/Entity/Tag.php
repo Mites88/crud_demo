@@ -6,6 +6,7 @@ use App\Repository\TagRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=TagRepository::class)
@@ -20,12 +21,13 @@ class Tag
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\NotBlank
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="Tags")
+     * @ORM\ManyToMany(targetEntity=Product::class, mappedBy="tags")
      */
     private $products;
 
@@ -49,6 +51,11 @@ class Tag
         $this->name = $name;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->name;
     }
 
     /**
@@ -76,9 +83,5 @@ class Tag
         }
 
         return $this;
-    }
-    public function __toString()
-    {
-        return (string) $this->name;
     }
 }
