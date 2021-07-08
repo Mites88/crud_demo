@@ -9,6 +9,9 @@ Some of the tools used in this project:
 - EasyAdmin 3
 - Bootstrap 5
 
+## Pre-requisites
+Docker ((Installation instructions)[https://docs.docker.com/get-started/])
+
 ## Installation instructions:
 Clone this repo by typing:  
 `git clone https://github.com/Mites88/crud_demo.git`
