@@ -26,7 +26,7 @@ Navigate to our app directory:
 `cd app`
 
 Install dependencies, give permissions, run migrations and run fixtures:  
-`composer install -n  && chown -R :www-data var && symfony console --no-interaction doctrine:migrations:migrate && symfony console --no-interaction doctrine:fixtures:load`
+`composer install -n  && chown -R :www-data var && symfony console --no-interaction doctrine:migrations:migrate && symfony console --no-interaction doctrine:fixtures:load`  
 Todo: Automate these steps
 
 You are set! Content will be served in this URL:  
