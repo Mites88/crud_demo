@@ -17,4 +17,4 @@ RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN git config --global user.email "contato@mites.gg" \ 
     && git config --global user.name "Mateus G."
 
-RUN php /var/www/crud_demo/bin/console doctrine:fixtures:load
+RUN cd /var/www/crud_demo/bin/console && symfony console doctrine:fixtures:load
