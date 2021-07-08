@@ -13,7 +13,7 @@ Some of the tools used in this project:
 
 ## Pre-requisites
 
-Docker [Installation instructions](https://docs.docker.com/get-started/)
+Docker ([Installation instructions](https://docs.docker.com/get-started/))
 
 ## Installation instructions:
 
