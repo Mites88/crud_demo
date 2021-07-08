@@ -18,7 +18,7 @@ Clone this repo by typing:
 Navigate to the main folder:  
 ``cd crud_demo``
 
-Build docker image:  
+Build docker images:  
 ``docker-compose up -d --build``  
 
 Open admin URL in your browser:  
