@@ -1,5 +1,5 @@
 # Docker + Symfony Product Crud Demo
-This is a Symfony + Docker proof of concept CRUD project, intended for demonstration purposes.
+This is a Symfony + Docker proof of concept CRUD project, for demonstration purposes.
 
 Some of the tools used in this project:
 - Symfony 5
