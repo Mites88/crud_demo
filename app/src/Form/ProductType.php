@@ -17,8 +17,7 @@ class ProductType extends AbstractType
             ->add('description')
             ->add('stock')
             ->add('images')
-            ->add('Tags')
-        ;
+            ->add('Tags');
     }
 
     public function configureOptions(OptionsResolver $resolver)

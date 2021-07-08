@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20210705104327 extends AbstractMigration
+final class Version20210707115414 extends AbstractMigration
 {
     public function getDescription(): string
     {
@@ -20,7 +20,7 @@ final class Version20210705104327 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('CREATE TABLE image (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(255) NOT NULL, title VARCHAR(255) DEFAULT NULL)');
+        $this->addSql('CREATE TABLE image (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR(255) NOT NULL, title VARCHAR(255) DEFAULT NULL, path VARCHAR(255) NOT NULL, image_size INTEGER NOT NULL, updated_at DATETIME NOT NULL)');
         $this->addSql('CREATE TABLE product (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, title VARCHAR(255) NOT NULL, price DOUBLE PRECISION NOT NULL, description VARCHAR(4000) DEFAULT NULL, stock INTEGER NOT NULL)');
         $this->addSql('CREATE TABLE product_image (product_id INTEGER NOT NULL, image_id INTEGER NOT NULL, PRIMARY KEY(product_id, image_id))');
         $this->addSql('CREATE INDEX IDX_64617F034584665A ON product_image (product_id)');
