@@ -8,7 +8,7 @@ Some of the tools used:
 - SQLite 3
 - EasyAdmin 3
 
-##Installation instructions:
+## Installation instructions:
 
 Prerequiste: Docker
 

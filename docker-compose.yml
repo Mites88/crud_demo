@@ -21,9 +21,9 @@ services:
     depends_on:
       - php
 
-    composer_installation:
-      container_name: composer_installation
-      image: composer
-      volumes:
-        - ./:/app
-      command: composer install --ignore-platform-reqs
+  composer_installation:
+    container_name: composer_installation
+    image: composer
+    volumes:
+      - ./app:/var/www/crud_demo
+    command: composer install --ignore-platform-reqs
