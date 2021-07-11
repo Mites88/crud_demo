@@ -30,7 +30,7 @@ class Product
      *   min = 6,
      *   max = 255,
      *   minMessage = "Your first name must be at least {{ limit }} characters long",
-     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
+     *   maxMessage = "Your first name cannot be longer than {{ limit }} characters"
      * )
      */
     private $title;

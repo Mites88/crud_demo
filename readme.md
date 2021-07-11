@@ -15,7 +15,7 @@ Some of the tools used in this project:
 
 Docker ([Get started with docker](https://docs.docker.com/get-started/))
 
-## Installation instructions:
+## Installation instructions
 
 Clone this repo by typing the following in the command line:  
 `git clone https://github.com/Mites88/crud_demo.git`
